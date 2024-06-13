@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- custom html file made by JeanDoe -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- document title -->
+    <title>VisKraft</title>
+  </head>
+  <body>
+    <section class="section home">
+      <div class="fas fa-lightbulb" id="theme-btn"></div>
+      <div class="intro">
+        <h2>We Are Launching Soon!</h2>
+        <p class="description">
+          Exciting news! We're about to launch our cutting-edge SAAS products in
+          a modern way that will revolutionize your workflow and elevate your
+          business to new heights. Stay tuned for updates and be the first to
+          experience the future of productivity.
+        </p>
+        <div class="counter" data-launch-date="2024-10-12T00:00:00Z">
+          <p class="day"><span id="days">120</span>days</p>
+          <p class="hour"><span id="hours">00</span>hours</p>
+          <p class="minute"><span id="minutes">00</span>minutes</p>
+          <p class="second"><span id="seconds">00</span>seconds</p>
+        </div>
+      </div>
+      <img src="img/Create-cuate.svg" alt="home intro" />
+    </section>
+
+    <!-- custom js file starts -->
+    <script src="js/main.js"></script>
+    <script>
+      // Countdown Timer
+      const launchDate = new Date('2024-10-12T00:00:00Z').getTime();
+
+      const interval = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = launchDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('days').innerText = days;
+        document.getElementById('hours').innerText = hours;
+        document.getElementById('minutes').innerText = minutes;
+        document.getElementById('seconds').innerText = seconds;
+
+        if (distance < 0) {
+          clearInterval(interval);
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
+
