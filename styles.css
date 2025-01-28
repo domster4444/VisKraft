@@ -7,6 +7,12 @@
   --max-width: 1200px;
 }
 
+/* garbage override */
+.calconic-info h4:first-of-type {
+  /* Your styles here */
+  display: none;
+}
+
 * {
   padding: 0;
   margin: 0;
