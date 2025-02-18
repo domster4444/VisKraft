@@ -9,14 +9,16 @@ export const ProductShowcase = () => {
       <div className="container">
         <div className="section-heading">
           <div className="flex justify-center">
-            <div className="tag">Boost your productivity</div>
+            <div className="tag">Empower Your Institution</div>
           </div>
           <h2 className="section-title mt-5">
-            A more effective way to track progress
+            Transform Education with Smart Solutions
           </h2>
           <p className="section-description mt-5">
-            Effortlessly turn your ideas into a fully functional, responsive,
-            SaaS website in just minutes with this template.
+            VisKraft provides cutting-edge web-based school management software,
+            innovative branding and marketing strategies, and seamless website
+            development to help schools and institutions thrive in the digital
+            age.
           </p>
         </div>
         <div className="relative">
@@ -39,4 +41,3 @@ export const ProductShowcase = () => {
     </section>
   );
 };
-

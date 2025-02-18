@@ -1,28 +1,104 @@
+'use client';
 import Image from 'next/image';
 import FirstLogo from '@/assets/logo-acme.png';
-import SecondLogo from '@/assets/logo-quantum.png';
-import ThirdLogo from '@/assets/logo-echo.png';
+import SecondLogo from '@/assets/logo-apex.png';
+import ThirdLogo from '@/assets/logo-celestial.png';
 
 export const LogoTicker = () => {
   return (
     <div className="py-8 md:py-12 bg-white">
       <div className="container">
-        <div className="flex overflow-hidden [mask-image:linear-gradient[to_right,transparent,black,transparent)]">
-          <div className="flex gap-14 flex-none">
+        <div className="logo-ticker-wrapper">
+          <div className="logo-ticker">
             <Image
               src={FirstLogo}
-              className="logo-ticker-image"
-              alt="Devi School Logo"
+              width={150}
+              height={150}
+              alt="Company Logo"
             />
             <Image
               src={SecondLogo}
-              className="logo-ticker-image"
-              alt="Sikaai Logo"
+              width={150}
+              height={150}
+              alt="Company Logo"
             />
             <Image
               src={ThirdLogo}
-              className="logo-ticker-image"
-              alt="Sikaai Abroad Logo"
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
+            <Image
+              src={FirstLogo}
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
+            <Image
+              src={SecondLogo}
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
+            <Image
+              src={ThirdLogo}
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
+            <Image
+              src={FirstLogo}
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
+            <Image
+              src={SecondLogo}
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
+            <Image
+              src={ThirdLogo}
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
+            <Image
+              src={FirstLogo}
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
+            <Image
+              src={SecondLogo}
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
+            <Image
+              src={ThirdLogo}
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
+            <Image
+              src={FirstLogo}
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
+            <Image
+              src={SecondLogo}
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
+            <Image
+              src={ThirdLogo}
+              width={150}
+              height={150}
+              alt="Company Logo"
             />
           </div>
         </div>

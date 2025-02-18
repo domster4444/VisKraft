@@ -21,11 +21,16 @@ export const Header = () => {
             <Image src={Logo} alt="viskraft logo" height={40} width={40} />
             <MenuIcon className="h-5 w-5 md:hidden" />
             <nav className="hidden md:flex gap-6  text-black/60 items-center">
-              <a href="https://yourschoolsoftware.com">Our Product</a>
-              <a href="#testimonial">Testimonial</a>
-              <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
-                contact us
-              </button>
+              <a href="https://yourschoolsoftware.com">ERP</a>
+              <a href="#services">Service</a>
+              <a
+                href="https://yourschoolsoftware.com/scheduleMeetingPage"
+                target="_blank"
+              >
+                <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
+                  contact us
+                </button>
+              </a>
             </nav>
           </div>
         </div>
