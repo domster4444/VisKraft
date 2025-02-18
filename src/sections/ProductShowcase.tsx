@@ -26,13 +26,13 @@ export const ProductShowcase = () => {
             src={PyramidImage}
             height={262}
             width={262}
-            className="absolute -right-36 -top-32"
+            className="hidden md:block absolute -right-36 -top-32"
           />
           <Image
             alt="tube image"
             src={TubeImage}
             height={248}
-            className="absolute bottom-24 -left-36"
+            className="hidden md:block absolute bottom-24 -left-36"
           />
         </div>
       </div>
